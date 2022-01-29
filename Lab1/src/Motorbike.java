@@ -1,9 +1,9 @@
-public class Motorbike extends Car{
+public class Motorbike extends Vehicle{
 
     public boolean carrier;
 
-    public Motorbike(String colour, String type, String engineSize, double netPrice, double vrt, int numDoors, boolean carrier) {
-        super(colour, type, engineSize, netPrice, numDoors);
+    public Motorbike(String colour, String type, String engineSize, double netPrice, double vrt, boolean carrier) {
+        super(colour, type, engineSize, netPrice);
         this.carrier = carrier;
     }
 

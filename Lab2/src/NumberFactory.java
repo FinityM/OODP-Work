@@ -7,9 +7,13 @@ public class NumberFactory {
         {
             return new DoubleList(list);
         }
-        else
+        else if (i == -1)
         {
             return new IntList(list);
+        }
+        else
+        {
+            return new HexList(list);
         }
     }
 }

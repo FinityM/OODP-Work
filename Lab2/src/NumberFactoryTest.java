@@ -17,8 +17,8 @@ public class NumberFactoryTest {
         System.out.println("");
         System.out.println("Sum of list 2: " + numberList2.sum());
 
-       /* NumberList numberList3 = nfactory.getNumberList(hexList);
-        numberList3.display();*/
+       NumberList numberList3 = nfactory.getNumberList(hexList);
+        numberList3.display();
 
     }
 }

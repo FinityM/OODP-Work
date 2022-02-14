@@ -8,6 +8,7 @@ public class IntList extends NumberList {
 
         StringTokenizer token = new StringTokenizer(list);
 
+
         size = token.countTokens();
 
         //Allocate some space for the array

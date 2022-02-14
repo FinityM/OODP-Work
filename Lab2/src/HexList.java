@@ -32,6 +32,7 @@ public class HexList extends NumberList{
 
     public void display()
     {
+        System.out.println("Hex List");
         for(int i = 0; i < size; i++){
             System.out.println("[" + i + "]" + hex_list[i]);
 

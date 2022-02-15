@@ -15,7 +15,7 @@ public class HexList extends NumberList{
 
         for(int i = 0; i < size; i++)
         {
-            hex_list[i] = Integer.parseInt(token.nextToken());
+            hex_list[i] = Integer.decode(token.nextToken());
         }
     }
 
@@ -34,7 +34,7 @@ public class HexList extends NumberList{
     {
         System.out.println("Hex List");
         for(int i = 0; i < size; i++){
-            System.out.println("[" + i + "]" + hex_list[i]);
+            System.out.println("[" + i + "]" + "0x" + Integer.toHexString(hex_list[i]));
 
         }
     }

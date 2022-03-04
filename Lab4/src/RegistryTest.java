@@ -20,6 +20,5 @@ public class RegistryTest {
 
     System.out.println("mm = " + mm);
 
-
     }
 }

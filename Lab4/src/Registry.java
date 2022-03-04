@@ -17,15 +17,19 @@ public class Registry {
 
     public static Object singletonObjects(String s){
         if (s == "Message Manager"){
+            System.out.println("This is the Message Manager Singleton: ");
             return MessageManager.getManager();
         } else if (s == "Log Manager"){
+            System.out.println("This is the Log Manager Singleton: ");
             return LogManager.getLogManager();
         } else if (s == "Window Manager"){
+            System.out.println("This is the Window Manager Singleton: ");
             return WindowManager.getManager();
         } else if (s == "Print Manager"){
+            System.out.println("This is the Print Manager: ");
             return PrintManager.getPrintManager();
         } else {
-            return null;
+            return "That Singleton does not exist";
         }
 
     }

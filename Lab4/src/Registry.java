@@ -1,9 +1,14 @@
 public class Registry {
     private static Registry registry;
+    /*
+    Can be used as an extra check
+    private boolean singletonFlag;
+    */
 
     private Registry(){
 
     }
+
 
     public static synchronized Registry getRegistry(){
         if (registry == null)

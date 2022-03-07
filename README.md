@@ -1,2 +1,2 @@
 # OODP-Work
- Object Orientation With Design Patter third year module work  
+ Object Orientation With Design Patterns third year module work  

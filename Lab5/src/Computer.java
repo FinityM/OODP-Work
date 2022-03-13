@@ -42,8 +42,6 @@ public class Computer {
             this.RAM = RAM;
             this.HDD = HDD;
             this.CPU = CPU;
-            this.isBluetoothEnabled = isBluetoothEnabled;
-            this.isGraphicsCardEnabled = isGraphicsCardEnabled;
         }
 
         public Builder getRAM() {

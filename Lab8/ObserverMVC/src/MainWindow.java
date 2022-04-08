@@ -8,7 +8,11 @@ public class MainWindow extends JFrame implements ActionListener
 {
     // UI Components
     private JTextField text;
+
+	// Observers
     private JList list1, list2, list3;
+
+	// Data Model
 	private ListData listData;
 	private JButton addBtn;
     private JButton deleteBtn;
@@ -28,6 +32,8 @@ public class MainWindow extends JFrame implements ActionListener
 		// Create the list data source (listData) and the JLists
 		// NOTE how the data source is passed to each JList
 		listData = new ListData();
+
+		// Register interest in Data
 		list1 = new JList(listData); list1.setBorder(BorderFactory.createLineBorder(Color.gray));
 		list2 = new JList(listData); list2.setBorder(BorderFactory.createLineBorder(Color.gray));
 		list3 = new JList(listData); list3.setBorder(BorderFactory.createLineBorder(Color.gray));
@@ -53,6 +59,7 @@ public class MainWindow extends JFrame implements ActionListener
 		show();
 	}
 
+	// Add data to the ListData object and update the JList
 	public void actionPerformed(ActionEvent e){
 		if (e.getSource() == addBtn){
 			// Add to the data source

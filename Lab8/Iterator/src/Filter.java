@@ -1,5 +1,12 @@
 import java.util.*;
 
+/**
+ * Iterator interface using enumeration
+ * Contains implementations for the next element and if there is
+ * an element (hasElement)
+ *
+ */
+
 class Filter implements Enumeration{
 	private Enumeration data;
 	private String filter;

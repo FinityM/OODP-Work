@@ -5,6 +5,10 @@ import javax.swing.*;
 //In this version, the Command objects are external classes
 //and we pass them copies of the Frame instance
 //in their constructor
+
+/**
+ * Code that contains JFrame
+ */
 public class Client extends JFrame{
    private Menu mnuFile;
    private MenuItem mnuOpen;
@@ -26,6 +30,9 @@ public class Client extends JFrame{
 
       JFrame frm = this;
 
+      /**
+       * Create appropriate command objects for open, exit and the open buttons
+       */
       mnuOpen.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
                executeCommand(new OpenCommand(frm));
